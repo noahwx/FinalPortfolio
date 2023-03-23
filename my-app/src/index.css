@@ -19,7 +19,8 @@
 }
 
 .Header-Logo {
-  width: 20em
+  width: 20em;
+  transition: transform .3s ease-in-out;
 }
 
 .Header-Items {
@@ -45,7 +46,49 @@
   box-shadow: inset 5em 0 0 0 #1E1F1E;
 }
 
+.Header-Logo:hover {
+  transform: scale(1.05);
+}
+
 .Desktop-Wrapper {
   margin-left: 6em;
   margin-right: 6em;
+}
+
+.Home-Text-1 {
+  position: relative;
+  top: 5em;
+  font-size: clamp(3em, 6vw, 3em);
+}
+
+.Home-Text-2 {
+  position: relative;
+  top: 8em;
+  font-size: clamp(2em, 4vw, 2em);
+}
+
+@keyframes scroller {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    content: 'Data Analyst';
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  30%, 45% {
+    opacity: 0;
+  }
+  50% {
+    content: 'Front-End Developer';
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.scroller::before {
+  content: "";
+  animation: scroller 10s infinite;
 }
