@@ -68,27 +68,60 @@
 }
 
 @keyframes scroller {
-  0% {
+  0%, 10% {
     opacity: 0;
+    border-width: 0em;
   }
-  25% {
+  15%, 45% {
     content: 'Data Analyst';
-    transform: translateY(-100%);
     opacity: 1;
+    border-width: 0.5em;
   }
-  30%, 45% {
+  50%, 55% {
     opacity: 0;
+    border-width: 0em;
   }
-  50% {
+  60%, 80% {
     content: 'Front-End Developer';
     opacity: 1;
+    border-width: 0.5em;
   }
-  100% {
+  85%, 100% {
     opacity: 0;
+    border-width: 0em;
   }
 }
 
 .scroller::before {
   content: "";
-  animation: scroller 10s infinite;
+  animation: scroller 10s ease infinite;
+  border-bottom: 2px solid #1E1F1E;
+}
+
+.Page-Title {
+  font-size: clamp(3em, 6vw, 3em);
+  font-weight: 600;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.Page-Para {
+  font-size: clamp(1.5em, 3vw, 1.5em);
+  margin-bottom: 1em;
+}
+
+.contact-link {
+  display: block;
+  font-size: clamp(1.5em, 3vw, 1.5em);
+  text-decoration: none;
+  color: #1E1F1E;
+  box-shadow: inset 0 0 0 0 #1E1F1E;
+  padding: 0.2em;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.contact-link:hover {
+  box-shadow: inset 11em 0 0 0 #1E1F1E;
+  color: #F5F6F4;
+  width: auto;
 }
