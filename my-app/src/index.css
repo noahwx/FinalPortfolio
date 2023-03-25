@@ -75,7 +75,7 @@
   15%, 45% {
     content: 'Data Analyst';
     opacity: 1;
-    border-width: 0.5em;
+    border-width: 0.2em;
   }
   50%, 55% {
     opacity: 0;
@@ -84,7 +84,7 @@
   60%, 80% {
     content: 'Front-End Developer';
     opacity: 1;
-    border-width: 0.5em;
+    border-width: 0.2em;
   }
   85%, 100% {
     opacity: 0;
