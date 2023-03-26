@@ -15,6 +15,7 @@ const About = () => {
                     Overall, my experience in data analysis and front-end development, combined with my expertise in Python, SQL, React, Excel, Tableau, and Microsoft Power BI, makes me a versatile and valuable addition to any team. I am a problem solver who can work collaboratively in a team environment and is always keen to learn and grow. My wide range of skills enables me to handle challenging projects and deliver meaningful insights that can help businesses make informed decisions.
                 </p>
             </div>
+            <div className='background'></div>
         </div>
      );
 }

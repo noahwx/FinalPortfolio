@@ -9,7 +9,39 @@
 
 /* Desktop CSS */
 
+.Desktop-Wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: scale(1.1);
+  filter: blur(20px);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .Header {
+  position: relative;
+  z-index: 99;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -18,9 +50,84 @@
   border-bottom: 1px solid #1E1F1E;
 }
 
-.Header-Logo {
+.logos {
   width: 20em;
   transition: transform .3s ease-in-out;
+  position: relative;
+  z-index: 99;
+}
+
+.logo1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.logo2 {
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  opacity: 0;
+}
+
+.logo3 {
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  width: 100%;
+  height: 100%;
+  z-index: 97;
+  opacity: 0;
+}
+
+.logo4 {
+  position: absolute;
+  top: 0.6em;
+  left: 0.6em;
+  width: 100%;
+  height: 100%;
+  z-index: 96;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.logos:hover {
+  transform: scale(1.1);
+}
+
+.logos:hover > .logo2 {
+  animation: fadeIn 0.3s ease-in-out 0.3s forwards, fadeOut 0.7s ease-in-out 2s forwards;
+}
+
+.logos:hover > .logo3 {
+  animation: fadeIn 0.5s ease-in-out 0.4s forwards, fadeOut 0.5s ease-in-out 2s forwards;
+}
+
+.logos:hover > .logo4 {
+  animation: fadeIn 0.7s ease-in-out 0.5s forwards, fadeOut 0.3s ease-in-out 2s forwards;
 }
 
 .Header-Items {
@@ -31,23 +138,19 @@
 .Header-Item {
   padding: 0.5em;
   text-decoration: none;
-  color: #1E1F1E;
+  color: #F5F6F4;
   box-shadow: inset 0 0 0 0 #1E1F1E;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .Header-Item:hover {
-  box-shadow: inset 5em 0 0 0 #1E1F1E;
+  box-shadow: inset 0 0 5em 0 #1E1F1E;
   color: #F5F6F4;
 }
 
 .Header-Item.active {
   color: #F5F6F4;
-  box-shadow: inset 5em 0 0 0 #1E1F1E;
-}
-
-.Header-Logo:hover {
-  transform: scale(1.05);
+  border-bottom: 2px solid #F5F6F4;
 }
 
 .Desktop-Wrapper {
@@ -57,14 +160,20 @@
 
 .Home-Text-1 {
   position: relative;
+  z-index: 1;
   top: 5em;
   font-size: clamp(3em, 6vw, 3em);
+  text-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
+  color: #F5F6F4;
 }
 
 .Home-Text-2 {
   position: relative;
+  z-index: 1;
   top: 8em;
   font-size: clamp(2em, 4vw, 2em);
+  text-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
+  color: #F5F6F4;
 }
 
 @keyframes scroller {
@@ -95,7 +204,7 @@
 .scroller::before {
   content: "";
   animation: scroller 10s ease infinite;
-  border-bottom: 2px solid #1E1F1E;
+  border-bottom: 2px solid #F5F6F4;
 }
 
 .Page-Title {
@@ -103,18 +212,22 @@
   font-weight: 600;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  color: #F5F6F4;
+  text-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .Page-Para {
   font-size: clamp(1.5em, 3vw, 1.5em);
   margin-bottom: 1em;
+  color: #F5F6F4;
+  text-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
 .contact-link {
   display: block;
   font-size: clamp(1.5em, 3vw, 1.5em);
   text-decoration: none;
-  color: #1E1F1E;
+  color: #F5F6F4;
   box-shadow: inset 0 0 0 0 #1E1F1E;
   padding: 0.2em;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;

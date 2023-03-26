@@ -11,6 +11,7 @@ const Contact = () => {
                 <a href="https://twitter.com/noahf97" target="_blank" rel="noreferrer" className="contact-link">Twitter</a>
                 <a href="https://instagram.com/noahf.97" target="_blank" rel="noreferrer" className="contact-link">Instagram</a>
             </div>
+            <div className='background'></div>
         </div>
      );
 }

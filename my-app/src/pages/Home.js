@@ -7,6 +7,7 @@ const Home = () => {
                 <h1 className='Home-Text-1'>Hello, My Name is Noah Fontenette</h1>
                 <h2 className='Home-Text-2'>With Experince as a&nbsp;<span className='scroller'></span></h2>
             </div>
+            <div className='background'></div>
         </div>
      );
 }

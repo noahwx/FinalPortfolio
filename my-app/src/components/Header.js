@@ -5,7 +5,25 @@ import logo from '../logo.svg';
 const Header = () => {
     return ( 
         <div className="Header">
-            <NavLink to="/" className='Header-Logo'><img src={logo} alt='logo'/></NavLink>
+            <NavLink to="/">
+                <div className="logos">
+                    <div className="logo1">
+                        <img src={logo} alt='logo' className="hlogo"/>
+                    </div>
+                    <div className="logo2">
+                        <img src={logo} alt='logo' className="hlogo"/>
+                    </div>
+                    <div className="logo3">
+                        <img src={logo} alt='logo' className="hlogo"/>
+                    </div>
+                    <div className="logo4">
+                        <img src={logo} alt='logo' className="hlogo"/>
+                    </div>
+                    <div className="logo5">
+                        <img src={logo} alt='logo' className="hlogo"/>
+                    </div>
+                </div>
+            </NavLink>
             <div className="Header-Items">
                 <NavLink to="/" className='Header-Item'>Home</NavLink>
                 <NavLink to="/pages/About" className='Header-Item'>About</NavLink>
