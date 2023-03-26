@@ -368,7 +368,8 @@
 
   .Home-Text-1 {
     position: fixed;
-    top: 5em;
+    top: 10em;
+    font-size: clamp(1.8rem, 2vw, 1.8rem);
   }
 
   .Home-Text-2 {
