@@ -330,6 +330,10 @@
   display: none;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 /* Mobile CSS */
 
 @media only screen and (max-width: 768px) {
@@ -340,20 +344,26 @@
   .Desktop-Wrapper {
     margin-left: 1em;
     margin-right: 1em;
+    overflow: hidden;
+  }
+
+  .mobile-menu {
+    display: block; 
   }
 
   .Menu-Button {
-    display: flex;
-    justify-content: space-around;
-    margin: 50em auto;
-    position: relative;
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 5em;
+    left: -50%;
+    right: -50%;
     z-index: 99;
-    height: 8em;
-    width: 8em;
+    height: 6em;
+    width: 6em;
     border-radius: 25em;
     outline: none;
     border: none;
-    cursor: pointer;
   }
 
   .Home-Text-1 {
