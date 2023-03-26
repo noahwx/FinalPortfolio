@@ -345,11 +345,11 @@
   .Menu-Button {
     display: flex;
     justify-content: space-around;
-    margin: 45em auto;
+    margin: 50em auto;
     position: relative;
     z-index: 99;
-    height: 5em;
-    width: 5em;
+    height: 8em;
+    width: 8em;
     border-radius: 25em;
     outline: none;
     border: none;
