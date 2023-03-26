@@ -369,12 +369,12 @@
   .Home-Text-1 {
     position: fixed;
     top: 10em;
-    font-size: clamp(1.8rem, 2vw, 1.8rem);
+    font-size: clamp(1.2rem, 2vw, 1.2rem);
   }
 
   .Home-Text-2 {
     position: fixed;
     top: 15em;
-    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1rem);
   }
 }
