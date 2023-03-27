@@ -334,21 +334,28 @@
   display: none;
 }
 
+.Mobile-Wrapper {
+  display: none;
+}
+
 /* Mobile CSS */
 
 @media only screen and (max-width: 768px) {
+
+  .Mobile-Wrapper {
+    display: block;
+  }
+
   .Header {
     display: none;
   }
 
   .Desktop-Wrapper {
-    margin-left: 1em;
-    margin-right: 1em;
-    overflow: hidden;
+    display: none;
   }
 
   .mobile-menu {
-    display: block; 
+    display: block;
   }
 
   .Menu-Button {
@@ -364,19 +371,47 @@
     border-radius: 25em;
     outline: none;
     border: none;
+    cursor: pointer;
   }
 
-  .Home-Text-1 {
+  .mobile-Nav {
     position: fixed;
-    top: 10em;
-    font-size: clamp(1.4rem, 2vw, 1.4rem);
+    bottom: 12em;
+    left: 3em;
+    z-index: 99;
+    background-color: #F5F6F4;
     padding: 1em;
+    border-radius: 25em;
+    animation: menuOpen 0.2s linear;
   }
 
-  .Home-Text-2 {
-    position: fixed;
-    top: 15em;
-    font-size: clamp(1.2rem, 2vw, 1.2rem);
-    padding: 1em;
+  .mobile-NavItems {
+    font-size: clamp(1.5em, 3vw, 1.5em);
+  }
+
+  .mobile-NavItem {
+    padding: 0.2em;
+    color: #1E1F1E;
+    text-decoration: none;
+  }
+
+  @keyframes menuOpen {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .mobile-btn-etcs{
+    position: relative;
+    z-index: 99;
   }
 }
