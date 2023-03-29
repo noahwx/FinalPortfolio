@@ -8,7 +8,7 @@ const Home = () => {
     const handleOpen = () => {
         setOpen(!open);
     };
-    
+
     return ( 
         <div>
             <div className='Desktop-Wrapper'>
@@ -18,7 +18,7 @@ const Home = () => {
             <div className='Mobile-Wrapper'>
                 <div className='mobile-menu'>
                     <h4 className="mobile-btn-etcs">Menu</h4>
-                    <button className='Menu-Button' onClick={handleOpen} style={{ backgroundColor: open ? 'red' : 'none' }}></button>
+                    <button className='Menu-Button' onClick={handleOpen}></button>
                         {open ? (
                             <div className='mobile-Nav'>
                                 <div className='mobile-NavItems'>
@@ -29,8 +29,10 @@ const Home = () => {
                                 </div>
                             </div>
                         ) : null}
-                    </div>
                 </div>
+                <h1 className='Home-Text-1'>Hello, My Name is Noah Fontenette</h1>
+                <h2 className='Home-Text-2'>With Experince as a&nbsp;<span className='scroller'></span></h2>
+            </div>
             <div className='background'></div>
         </div>
      );
