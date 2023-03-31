@@ -472,10 +472,4 @@ textarea {
     margin-bottom: 0.1em;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   }
-
-  .Mobile-Experince {
-    position: absolute;
-    top: 30em;
-    z-index: 0;
-  }
 }
