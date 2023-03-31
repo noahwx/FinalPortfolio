@@ -492,7 +492,7 @@ textarea {
     position: absolute;
     left: 1em;
     font-weight: 700;
-    margin-top: 5em;
+    margin-top: 2em;
   }
 
   .Mobile-about-para {
@@ -501,7 +501,7 @@ textarea {
     font-weight: 500;
     color: var(--text);
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 15em;
+    margin-top: 8em;
   }
 
   .Mobile-Contact-Container {
