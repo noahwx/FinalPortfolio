@@ -386,10 +386,10 @@ textarea {
 
   .MobileNavBtn {
     position: absolute;
-    bottom: 0;
+    bottom: 1em;
     z-index: 99;
-    width: 5em;
-    height: 5em;
+    width: 7em;
+    height: 7em;
     border-radius: 10em;
     outline: none;
     border: none;
