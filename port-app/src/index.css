@@ -382,12 +382,13 @@ textarea {
   .mobilebackground {
     position: absolute;
     top: 3em;
-    left: 13em;
+    left: 15em;
     z-index: -1;
     max-width: 100%;
-    height: 50em;
+    height: 20em;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     animation: fadeInMobile 1s linear;
+    overflow: hidden;
   }
 
   .MobileNav {
