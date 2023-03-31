@@ -8,7 +8,7 @@ const MailToBtn = ({ mailto, label }) => {
                 onClick={(e) => {
                     window.location.href = mailto;
                     e.preventDefault();
-                }} className="contact-item">
+                }} className="contact-item mobile-contact-item">
                 {label}
             </Link>
         </>

@@ -507,11 +507,19 @@ textarea {
   .Mobile-Contact-Container {
     display: flex;
     justify-content: center;
-    margin-top: 20em;
+    margin-top: 10em;
     left: 10em;
   }
 
   .contact-item {
-    padding: 1em;
+    display: none;
+  }
+
+  .mobile-contact-item {
+    display: block;
+    font-size: clamp(1.5rem, 2vw, 1.5rem);
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.4em;
   }
 }
