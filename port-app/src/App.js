@@ -4,7 +4,7 @@ import Favicon from 'react-favicon'
 import logo from './logo.svg';
 import './index.css';
 
-// Version 0.0.800
+// Version 0.0.900
 
 function App() {
 

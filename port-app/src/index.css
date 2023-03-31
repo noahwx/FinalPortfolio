@@ -370,37 +370,50 @@ textarea {
 }
 
 .Work-Item {
-  background-color: var(--text);
   display: block;
   height: 15em;
   border-radius: 1em;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   overflow: hidden;
-  padding: 1em;
+  transition: all 0.2s ease;
+}
+
+.Work-Item-Info {
+  position: absolute;
+  z-index: 99;
+  padding: 2em;
 }
 
 .Work-Item-Heading {
   font-size: clamp(1.5rem, 2vw, 1.5rem);
-  font-weight: 500;
-  color: var(--bg);
-  text-align: left;
-  position: relative;
-  z-index: 99;
+  font-weight: 700;
+  color: var(--text);
 }
 
 .Work-Item-Para {
   font-size: clamp(1rem, 2vw, 1rem);
-  font-weight: 300;
-  color: var(--bg);
+  font-weight: 500;
+  color: var(--text);
   text-align: left;
   position: relative;
   z-index: 99;
 }
 
-.Work-Item-Img {
-  position: relative;
-  z-index: 0;
+.WorkImg {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+  transition: all 5s ease;
+}
+
+.Work-Item:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Work-Item:hover > .WorkImg {
+  transform: scale(1.1);
 }
 
 .Mobile-Wrapper {

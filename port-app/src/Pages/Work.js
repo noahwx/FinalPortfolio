@@ -8,9 +8,11 @@ const Work = () => {
                 <h1 className="Heading">Work</h1>
                 <div className="Work-Wrapper">
                     <div className="Work-Item">
-                        <h2 className="Work-Item-Heading">Work Item 1</h2>
-                        <p className="Work-Item-Para">Work Description</p>
-                        <img src="https://images.unsplash.com/photo-1679602206624-04d674a95fcc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1015&q=80" alt="Work Item 1" className="Work-Item-Img"/>
+                        <div className="Work-Item-Info">
+                            <h2 className="Work-Item-Heading">Work Item 1</h2>
+                            <p className="Work-Item-Para">Work Description</p>
+                        </div>
+                        <img className="WorkImg" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
                     </div>
                 </div>
                 <footer>
