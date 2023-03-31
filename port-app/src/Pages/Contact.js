@@ -12,6 +12,11 @@ const Contact = () => {
                     <a href="https://twitter.com/noahf97" className="contact-item" target="_blank" rel="noopener noreferrer">Twitter</a> 
                     <a href="https://www.instagram.com/noahf.97/" className="contact-item" target="_blank" rel="noopener noreferrer">Instagram</a> 
                 </div>
+                <footer>
+                    <div className="Footer-Wrapper">
+                        <h4 className="Footer-Item">Designed by Noah Fontenette © 2023</h4>
+                    </div>
+                </footer>
             </div>
             <div className="Mobile-Wrapper">
                 <MobileHeader />

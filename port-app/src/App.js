@@ -1,12 +1,16 @@
 import Header from './components/Header';
 import Main from './components/Main';
+import Favicon from 'react-favicon'
+import logo from './logo.svg';
 import './index.css';
 
-// Version 0.0.700
+// Version 0.0.800
 
 function App() {
+
   return (
     <>
+      <Favicon url={logo}/>
       <Header />
       <Main />
     </>
