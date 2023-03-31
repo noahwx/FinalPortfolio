@@ -382,10 +382,10 @@ textarea {
   .mobilebackground {
     position: absolute;
     top: 3em;
-    right: -10em;
+    right: 0;
     z-index: -1;
-    max-width: 100%;
-    height: 45em;
+    max-width: 80%;
+    height: 40em;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
     animation: fadeInMobile 1s linear;
     overflow: hidden;
@@ -407,24 +407,32 @@ textarea {
     cursor: pointer;
     background: none;
     border: none;
+    z-index: 99;
   }
 
   .MobileNavItems {
-    display: flex;
     position: absolute;
-    bottom: 6em;
-    background-color: var(--text);
+    bottom: 0em;
     font-size: clamp(1.5rem, 3vw, 1.5rem);
-    border-radius: 0.5em;
-    height: 2em;
     animation: fadeInMobile 0.3s linear;
   }
 
   .MobileNavItem {
-    color: var(--bg);
+    position: relative;
+    z-index: 1;
+    color: var(--text);
     text-decoration: none;
-    padding: 0.4em;
+    padding: 0.2em;
     font-weight: 500;
+  }
+
+  .MobileNavBG {
+    position: relative;
+    z-index: 0;
+    height: 5em;
+    width: 15em;
+    background: radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(37,37,37,1) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
   }
 
   @keyframes fadeInMobile {
@@ -462,5 +470,12 @@ textarea {
     font-weight: 700;
     color: var(--text);
     margin-bottom: 0.1em;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .Mobile-Experince {
+    position: absolute;
+    top: 30em;
+    z-index: 0;
   }
 }

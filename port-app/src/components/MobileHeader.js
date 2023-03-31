@@ -22,6 +22,7 @@ const MobileHeader = () => {
                     <NavLink to='/Work' className='MobileNavItem'>Work</NavLink>
                     <NavLink to='/Blog' className='MobileNavItem'>Blog</NavLink>
                     <NavLink to='/Contact' className='MobileNavItem'>Contact</NavLink>
+                    <div className="MobileNavBG"></div>
                 </div>
             ) : null}
         </div>

@@ -47,6 +47,20 @@ const Home = () => {
                     <h1 className='Main-Text-Item-Mobile'>Analysis.</h1>
                     <h1 className='Main-Text-Item-Mobile'>Design.</h1>
                 </div>
+                <div className="Mobile-Experince">
+                    <div className="Experince-Heading-Wrapper">
+                        <div className="Shape"></div>
+                        <div className="Shape2"></div>
+                        <h1 className="Heading-Experience">Experience</h1>
+                    </div>
+                    <div className="Experince-Boxes">
+                        <div className="Experince-Box">
+                            <h1 className="Experince-Box-Heading">Data Analysis</h1>
+                            <h1 className="Experince-Box-Heading">Front-End Development</h1>
+                            <h1 className="Experince-Box-Heading">Graphic Design</h1>
+                        </div>
+                    </div>
+                </div>
                 <img className="mobilebackground" src="https://images.unsplash.com/photo-1614522562493-455408036ea9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt=""/>
             </div>
         </div>
