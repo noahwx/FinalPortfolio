@@ -9,6 +9,7 @@ const Header = () => {
                 <img src={logo} alt='logo'/>
             </NavLink>
             <div className='NavItems'>
+                <NavLink to='/' className='NavItem'>Home</NavLink>
                 <NavLink to='/About' className='NavItem'>About</NavLink>
                 <NavLink to='/Work' className='NavItem'>Work</NavLink>
                 <NavLink to='/Blog' className='NavItem'>Blog</NavLink>

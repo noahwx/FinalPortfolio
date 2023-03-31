@@ -43,15 +43,18 @@ body {
 }
 
 .Nav-Logo {
+  display: block;
   position: relative;
   z-index: 99;
   width: 10em;
+  margin-left: 2.5em;
   transition: all 0.3s ease;
 }
 
 .NavItems {
   font-size: clamp(1.7rem, 2vw, 1.7rem);
   font-weight: 600;
+  margin-left: 3.5em;
 }
 
 .NavItem {
@@ -293,6 +296,38 @@ textarea {
   color: var(--bg);
 }
 
+.Contact-Container {
+  display: block;
+  justify-content: center;
+  position: relative;
+  width: 7em;
+  height: 20em;
+}
+
+.contact-item {
+  position: relative;
+  float: left;
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5em;
+  transition: all 0.5s ease;
+}
+
+.contact-item:hover {
+  color: var(--bg);
+  box-shadow: inset 7em 0 0 0 var(--text);
+}
+
+.about-para {
+  font-size: clamp(1.3rem, 2vw, 1.3rem);
+  color: var(--text);
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
 @keyframes moveIn {
   0% {
     opacity: 0;
@@ -321,5 +356,42 @@ textarea {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.Mobile-Wrapper {
+  display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    display: none;
+  }
+
+  .Nav {
+    display: none;
+  }
+
+  .Mobile-Wrapper {
+    display: block;
+    margin: 1em;
+  }
+
+  .MobileNav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .MobileNavBtn {
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    width: 5em;
+    height: 5em;
+    border-radius: 10em;
+    outline: none;
+    border: none;
   }
 }
