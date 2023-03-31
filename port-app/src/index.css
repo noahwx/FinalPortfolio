@@ -396,7 +396,6 @@ textarea {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    animation: fadeInMobile 0.7s linear;
   }
 
   .MobileBtn {
@@ -408,6 +407,7 @@ textarea {
     background: none;
     border: none;
     z-index: 99;
+    animation: fadeInMobile 0.3s linear;
   }
 
   .MobileNavItems {
