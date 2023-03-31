@@ -495,6 +495,17 @@ textarea {
     margin-top: 2em;
   }
 
+  .Mobile-Heading1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: clamp(2.5rem, 3vw, 2.5rem);
+    position: absolute;
+    left: 1em;
+    font-weight: 700;
+    margin-top: 5em;
+  }
+
   .Mobile-about-para {
     text-align: center;
     font-size: clamp(1.3rem, 2vw, 1.3rem);
@@ -521,5 +532,6 @@ textarea {
     color: var(--text);
     text-decoration: none;
     padding: 0.4em;
+    margin-top: 5em;
   }
 }
