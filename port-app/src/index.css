@@ -483,4 +483,35 @@ textarea {
     margin-bottom: 0.1em;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   }
+
+  .Mobile-Heading {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: clamp(2.5rem, 3vw, 2.5rem);
+    position: absolute;
+    left: 1em;
+    font-weight: 700;
+    margin-top: 5em;
+  }
+
+  .Mobile-about-para {
+    text-align: center;
+    font-size: clamp(1.3rem, 2vw, 1.3rem);
+    font-weight: 500;
+    color: var(--text);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15em;
+  }
+
+  .Mobile-Contact-Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20em;
+    left: 10em;
+  }
+
+  .contact-item {
+    padding: 1em;
+  }
 }
