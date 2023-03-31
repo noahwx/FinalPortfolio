@@ -34,33 +34,6 @@ const Work = () => {
                             <img className="WorkImgM" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
                         </div>
                     </a>
-                    <a href='/Work' className="Mobile-Work-Link">
-                        <div className="Mobile-Work-Item">
-                            <div className="Work-Item-InfoM">
-                                <h2 className="Work-Item-HeadingM">Work Item 1</h2>
-                                <p className="Work-Item-ParaM">Work Description</p>
-                            </div>
-                            <img className="WorkImgM" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
-                        </div>
-                    </a>
-                    <a href='/Work' className="Mobile-Work-Link">
-                        <div className="Mobile-Work-Item">
-                            <div className="Work-Item-InfoM">
-                                <h2 className="Work-Item-HeadingM">Work Item 1</h2>
-                                <p className="Work-Item-ParaM">Work Description</p>
-                            </div>
-                            <img className="WorkImgM" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
-                        </div>
-                    </a>
-                    <a href='/Work' className="Mobile-Work-Link">
-                        <div className="Mobile-Work-Item">
-                            <div className="Work-Item-InfoM">
-                                <h2 className="Work-Item-HeadingM">Work Item 1</h2>
-                                <p className="Work-Item-ParaM">Work Description</p>
-                            </div>
-                            <img className="WorkImgM" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
-                        </div>
-                    </a>
                 </div>  
             </div>
         </div>
