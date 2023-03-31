@@ -407,7 +407,7 @@ textarea {
     background: none;
     border: none;
     z-index: 99;
-    animation: fadeInMobile 0.3s linear;
+    animation: moveupInMobile 0.5s linear;
   }
 
   .MobileNavItems {
@@ -452,6 +452,17 @@ textarea {
     100% {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  @keyframes moveupInMobile {
+    0% {
+      opacity: 0;
+      transform: translateY(10em) scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
   }
 
