@@ -264,7 +264,7 @@ textarea {
   align-items: center;
   position: absolute;
   top: 110em;
-  left: 40em;
+  left: 15em;
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
@@ -364,9 +364,9 @@ textarea {
 }
 
 .Work-Wrapper {
-  height: 180vh;
+  height: 90em;
   padding: 0.5em;
-  overflow: scroll;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.7));
 }
 
 .Work-Item {
@@ -379,41 +379,56 @@ textarea {
 }
 
 .Work-Item-Info {
-  position: absolute;
+  display: block;
+  justify-content: center;
+  position: relative;
   z-index: 99;
   padding: 2em;
+  transition: all 0.2s ease;
 }
 
 .Work-Item-Heading {
+  position: absolute;
+  top: 1em;
+  width: 10em;
   font-size: clamp(1.5rem, 2vw, 1.5rem);
   font-weight: 700;
   color: var(--text);
 }
 
 .Work-Item-Para {
+  position: absolute;
+  top: 5em;
+  width: 10em;
   font-size: clamp(1rem, 2vw, 1rem);
   font-weight: 500;
   color: var(--text);
   text-align: left;
-  position: relative;
-  z-index: 99;
 }
 
 .WorkImg {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  display: block;
+  margin-top: -5em;
   max-width: 100%;
   transition: all 5s ease;
 }
 
-.Work-Item:hover {
-  cursor: pointer;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
-}
-
 .Work-Item:hover > .WorkImg {
   transform: scale(1.1);
+}
+
+.Work-Item:hover > .Work-Item-Info {
+  transform: translateY(3.5em) translateX(25em);
+}
+
+.Work-Wrapper:hover > .Work-Item {
+  opacity: 0.2;
+}
+
+.Work-Wrapper:hover > .Work-Item:hover {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .Mobile-Wrapper {
@@ -610,7 +625,7 @@ textarea {
 
   .Mobile-Work-Item {
     position: relative;
-    height: 12em;
+    height: 10em;
     border-radius: 1em;
     margin-bottom: 1em;
     overflow: hidden;
