@@ -43,7 +43,7 @@ const Work = () => {
             </div>
             <div className="Mobile-Wrapper">
                 <MobileHeader />
-                <h1 className="Mobile-Heading">Work</h1>
+                <h1 className="Mobile-Heading2">Work</h1>
                 <div className="Mobile-Work-Wrapper">
                     <a href='/Work' className="Mobile-Work-Link">
                         <div className="Mobile-Work-Item">

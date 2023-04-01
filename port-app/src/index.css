@@ -583,6 +583,17 @@ textarea {
     margin-top: 6em;
   }
 
+  .Mobile-Heading2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: clamp(2.5rem, 3vw, 2.5rem);
+    position: absolute;
+    left: 1em;
+    font-weight: 700;
+    margin-top: 0.2em;
+  }
+
   .Mobile-about-para {
     text-align: center;
     font-size: clamp(1.3rem, 2vw, 1.3rem);
@@ -616,7 +627,7 @@ textarea {
     display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 7em;
+    margin-top: 5em;
     height: 40em;
     overflow: scroll;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.2));
