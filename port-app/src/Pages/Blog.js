@@ -14,6 +14,7 @@ const Blog = () => {
             </div>
             <div className="Mobile-Wrapper">
                 <MobileHeader />
+                <h1 className="Mobile-Heading">Blog</h1>
             </div>
         </div>
      );

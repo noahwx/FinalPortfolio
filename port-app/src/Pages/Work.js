@@ -7,33 +7,35 @@ const Work = () => {
             <div className="wrapper">
                 <h1 className="Heading">Work</h1>
                 <div className="Work-Wrapper">
-                    <a href="/Work" className="Work-Link">
-                        <div className="Work-Item">
-                            <div className="Work-Item-Info">
-                                <h2 className="Work-Item-Heading">Work Item 1</h2>
-                                <p className="Work-Item-Para">Work Description</p>
+                    <div className="Work-Items">
+                        <a href="/Work" className="Work-Link">
+                            <div className="Work-Item">
+                                <div className="Work-Item-Info">
+                                    <h2 className="Work-Item-Heading">Work Item 1</h2>
+                                    <p className="Work-Item-Para">Work Description</p>
+                                </div>
+                                <img className="WorkImg" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
                             </div>
-                            <img className="WorkImg" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
-                        </div>
-                    </a>
-                    <a href="/Work" className="Work-Link">
-                        <div className="Work-Item">
-                            <div className="Work-Item-Info">
-                                <h2 className="Work-Item-Heading">Work Item 2</h2>
-                                <p className="Work-Item-Para">Work Description</p>
+                        </a>
+                        <a href="/Work" className="Work-Link">
+                            <div className="Work-Item">
+                                <div className="Work-Item-Info">
+                                    <h2 className="Work-Item-Heading">Work Item 2</h2>
+                                    <p className="Work-Item-Para">Work Description</p>
+                                </div>
+                                <img className="WorkImg" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
                             </div>
-                            <img className="WorkImg" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
-                        </div>
-                    </a>
-                    <a href="/Work" className="Work-Link">
-                        <div className="Work-Item">
-                            <div className="Work-Item-Info">
-                                <h2 className="Work-Item-Heading">Work Item 3</h2>
-                                <p className="Work-Item-Para">Work Description</p>
+                        </a>
+                        <a href="/Work" className="Work-Link">
+                            <div className="Work-Item">
+                                <div className="Work-Item-Info">
+                                    <h2 className="Work-Item-Heading">Work Item 3</h2>
+                                    <p className="Work-Item-Para">Work Description</p>
+                                </div>
+                                <img className="WorkImg" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
                             </div>
-                            <img className="WorkImg" src="https://images.unsplash.com/photo-1679210208332-a58e411412ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80" alt="Work Item 1"/>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
                 <footer>
                     <div className="Footer-Wrapper">

@@ -82,6 +82,7 @@ body {
   margin-left: 15em;
   margin-right: 15em;
   margin-top: 5em;
+  animation: fadeIn 1s ease-out;
 }
 
 .background {
@@ -118,7 +119,7 @@ body {
 .Experince-Section {
   display: block;
   align-items: center;
-  margin-top: 10em;
+  margin-top: 12em;
   position: absolute;
   z-index: 99;
   animation: moveIn 1s ease-out;
@@ -174,7 +175,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 35em;
+  margin-top: 37em;
   position: absolute;
   z-index: 99;
   animation: moveIn 1s ease-out;
@@ -332,6 +333,65 @@ textarea {
   text-align: left;
 }
 
+.about-img {
+  position: absolute;
+  top: 25em;
+  right: 20em;
+  z-index: -1;
+  width: 20em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
+  animation: fadeUp 1.3s ease-out;
+  transition: all 1s ease;
+}
+
+.about-img1 {
+  position: absolute;
+  top: 40em;
+  right: 55em;
+  z-index: -1;
+  width: 20em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  filter: grayscale(100%);
+  animation: fadeUp 1.6s ease-out;
+  transition: all 1s ease;
+}
+
+.about-img2 {
+  position: absolute;
+  top: 30em;
+  right: 30em;
+  z-index: -2;
+  width: 40em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%);
+  animation: fadeUp 1s ease-out;
+  transition: all 1s ease;
+}
+
+.About-Images a:hover > .about-img {
+  filter: grayscale(0%);
+}
+
+.About-Images a:hover > .about-img1 {
+  filter: grayscale(0%);
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+}
+
+.about-img1:hover {
+  transform: scale(1.1);
+}
+
+.about-img2:hover {
+  transform: scale(1.1);
+}
+
 @keyframes moveIn {
   0% {
     opacity: 0;
@@ -356,6 +416,17 @@ textarea {
   0% {
     opacity: 0;
     transform: translateY(-10em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp{
+  0% {
+    opacity: 0;
+    transform: translateY(10em);
   }
   100% {
     opacity: 1;
@@ -413,25 +484,28 @@ textarea {
   transition: all 5s ease;
 }
 
-.Work-Item:hover > .WorkImg {
-  transform: scale(1.1);
-}
-
-.Work-Item:hover > .Work-Item-Info {
-  transform: translateY(3.5em) translateX(25em);
-}
-
-.Work-Wrapper:hover > .Work-Item {
-  opacity: 0.2;
-}
-
-.Work-Wrapper:hover > .Work-Item:hover {
-  opacity: 1;
+.Work-Item:hover {
   cursor: pointer;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
+.Work-Item:hover > .WorkImg {
+  transform: scale(1.5);
+}
+
+.Work-Item:hover > .Work-Item-Info {
+  transform: translateY(3.5em);
+}
+
 .Mobile-Wrapper {
+  display: none;
+}
+
+.About-Image-Stack {
+  display: block;
+}
+
+.About-Image-StackM {
   display: none;
 }
 
@@ -446,10 +520,15 @@ textarea {
     display: none;
   }
 
+  .About-Image-Stack {
+    display: none;
+  }
+
   .Mobile-Wrapper {
     display: block;
     margin: 2em;
     overflow: hidden;
+    animation: fadeIn 1s ease-out;
   }
 
   .mobilebackground {
@@ -487,7 +566,7 @@ textarea {
     position: absolute;
     bottom: 0em;
     font-size: clamp(1.5rem, 3vw, 1.5rem);
-    animation: fadeInMobile 0.3s linear;
+    animation: fadeInMobile 0.5s linear;
   }
 
   .MobileNavItem {
@@ -510,6 +589,7 @@ textarea {
     width: 15.2em;
     background: radial-gradient(circle, rgba(22,22,22,1) 0%, rgba(37,37,37,1) 100%);
     mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    animation: moveupInMobile 0.2s linear;
   }
 
   @keyframes fadeInMobile {
@@ -660,4 +740,51 @@ textarea {
     text-decoration: none;
     color: var(--text);
   }
+
+  .About-Image-StackM {
+    display: block;
+  }
+
+  .about-imgM {
+    position: absolute;
+    top: 25em;
+    left: 15em;
+    z-index: -1;
+    width: 10em;
+    border-radius: 0.5em;
+    animation: mobileFadeUp 0.5s linear;
+  }
+
+  .about-img1M {
+    position: absolute;
+    top: 30em;
+    left: 2em;
+    z-index: -1;
+    width: 10em;
+    border-radius: 0.5em;
+    animation: mobileFadeUp 0.5s linear;
+  }
+  
+  .about-img2M {
+    position: absolute;
+    top: 35em;
+    right: 3em;
+    z-index: -1;
+    width: 15em;
+    border-radius: 0.5em;
+    animation: mobileFadeUp 0.5s linear;
+  }
+
+  @keyframes mobileFadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10em) scale(0);
+      filter: grayscale(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: grayscale(0%);
+    }
+  } 
 }
